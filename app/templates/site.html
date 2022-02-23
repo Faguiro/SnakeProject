@@ -37,14 +37,6 @@
 <body style="background-color: rgb(15, 15, 15);">
 
 
-  <!-- Reprodução simples de áudio -->
-  <audio src="static/audio/bensound-happyrock.ogg" autoplay controls>
-    O seu navegador não suporta o elemento <code>audio</code>.
-  </audio>
-
-
-
-
   <nav class="navbar navbar-inverse">
 
     <div class="navbar-header">
@@ -92,6 +84,7 @@
 
       .alert.info {
         background-color: #2196F3;
+       
       }
 
       .alert.warning {
@@ -112,11 +105,32 @@
       .closebtn:hover {
         color: black;
       }
+      #audio{
+        right:10px;
+      }
     </style>
 
     <div class="alert info">
       <span class="closebtn">&times;</span>
       <strong>Info!</strong> Postagem nova no site! <a href='/site1'>Clique aqui para ver a postagem anterior.</a>
+      
+
+  <!-- Reprodução simples de áudio -->
+  <div class="audio">
+  <audio id="audio" src="static/audio/bensound-happyrock.ogg" autoplay controls >
+    O seu navegador não suporta o elemento <code>audio</code>.
+  </audio>
+  </div>
+
+  <script>
+    document.addEventListener("keypress", myFunction);
+    
+    function myFunction() {
+     # alert('function')
+     $('#audio').remove()
+    }
+    </script>
+
     </div>
 
 

@@ -14,7 +14,8 @@ import os
 import time
 #from playsound import playsound
 import random
-texto='Bem vindos!'
+texto = 'Bem vindos!'
+
 
 @bp.before_app_request
 def before_request():
@@ -24,15 +25,16 @@ def before_request():
         g.search_form = SearchForm()
     g.locale = str(get_locale())
 
+
 @bp.route('/', methods=['GET', 'POST'])
 @bp.route('/site', methods=['GET', 'POST'])
 def site():
     return render_template('site.html')
 
+
 @bp.route('/site1', methods=['GET', 'POST'])
 def site1():
     return render_template('site1.html')
-
 
 
 @bp.route('/fala', methods=['GET', 'POST'])
@@ -48,9 +50,9 @@ def fala(texto="Bem vindo!"):
    # time.sleep(2)
    # os.remove(randfile)
     return render_template('fala.html')
-#Teste de uso:
-#texto=input('Texto:')
-#fala(texto)
+# Teste de uso:
+# texto=input('Texto:')
+# fala(texto)
 # Contato: faguiro2005@gmail.com
 
 
@@ -190,3 +192,8 @@ def search():
         if page > 1 else None
     return render_template('search.html', title=_('Search'), posts=posts,
                            next_url=next_url, prev_url=prev_url)
+
+
+@bp.route('/inspire')
+def inspire():
+    return render_template('inspire.html')
