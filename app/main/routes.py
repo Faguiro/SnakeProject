@@ -9,10 +9,10 @@ from app.main.forms import EditProfileForm, EmptyForm, PostForm, SearchForm
 from app.models import User, Post
 from app.translate import translate
 from app.main import bp
-from gtts import gTTS
+#from gtts import gTTS
 import os
 import time
-from playsound import playsound
+#from playsound import playsound
 import random
 texto='Bem vindos!'
 
@@ -38,15 +38,15 @@ def site1():
 @bp.route('/fala', methods=['GET', 'POST'])
 def fala(texto="Bem vindo!"):
 
-    r1 = random.randint(1,10000000)
-    r2 = random.randint(1,10000000)
-    randfile = str(r2)+"randomtext"+str(r1) +".mp3"
-    tts = gTTS(texto,lang='pt-br')
-    tts.save(randfile)
-    time.sleep(2)
-    playsound(randfile,True)
-    time.sleep(2)
-    os.remove(randfile)
+   # r1 = random.randint(1,10000000)
+   # r2 = random.randint(1,10000000)
+   # randfile = str(r2)+"randomtext"+str(r1) +".mp3"
+   # tts = gTTS(texto,lang='pt-br')
+   # tts.save(randfile)
+   # time.sleep(2)
+   # playsound(randfile,True)
+   # time.sleep(2)
+   # os.remove(randfile)
     return render_template('fala.html')
 #Teste de uso:
 #texto=input('Texto:')
