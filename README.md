@@ -1,5 +1,5 @@
 
-<h4 align="center"> 
+<h4 align="center"> master
 	🚧  Projeto 🚀 Em construção...  🚧
 </h4>
 
@@ -8,9 +8,6 @@
 - python <= 3.7
 ```
 ## Ambiente:
-
-Na pasta raiz:
-```
 Na pasta raiz:
 ```
 python -m venv venv
@@ -22,9 +19,15 @@ python -m venv venv
 pip istall -r requeriments.txt
 ```
 
+## Variáveis de ambiente:
+```
+export FLASK_APP=app.py
+```
+```
+export FLASK_ENV=development
+```
+
 ## Start:
-
-
 ```
 flask run
 ```
