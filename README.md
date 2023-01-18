@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 <h4 align="center"> master
 	🚧  Projeto 🚀 Em construção...  🚧
@@ -31,3 +32,7 @@ export FLASK_ENV=development
 ```
 flask run
 ```
+=======
+# SnakeProject
+Portal feito em Flask 
+>>>>>>> origin/main
