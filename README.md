@@ -4,16 +4,10 @@
 
 ## Dependêcias:
 ```
-- python <= 3.7
+python <= 3.7
 ```
 ## Ambiente:
 Na pasta raiz:
-```
-python -m venv venv
-```
-```
-.\venv\Scripts\activate
-```
 ```
 pip istall -r requeriments.txt
 ```
