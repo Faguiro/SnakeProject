@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-
 <h4 align="center"> master
 	🚧  Projeto 🚀 Em construção...  🚧
 </h4>
@@ -34,5 +32,5 @@ flask run
 ```
 =======
 # SnakeProject
-Portal feito em Flask 
->>>>>>> origin/main
+
+
